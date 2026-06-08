@@ -131,6 +131,40 @@ section h3 {
     opacity: 0.9;
 }
 
+/* Grid de servicios - 3 columnas */
+#servicios .grid-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.servicio-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.servicio-card h3 {
+    color: white;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.servicio-card p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
 /* Footer */
 footer {
     background-color: #2c3e50;
@@ -155,6 +189,10 @@ footer {
     }
 
     .bicicletas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #servicios .grid-servicios {
         grid-template-columns: 1fr;
     }
 }
